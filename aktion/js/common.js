@@ -65,7 +65,7 @@ $(function () {
 
     $(document).ready(function() {
 
-        $('.wrapper>p').not(':first-of-type').hide();
+        $('.wrapper>article').not(':first-of-type').hide();
 
 
         $('.wrapper>span').click(function() {
@@ -82,7 +82,7 @@ $(function () {
             }
             else {
 
-                findWrapper.find('>p').slideUp('fast').removeClass('span-active');
+                findWrapper.find('>article').slideUp('fast').removeClass('span-active');
                 findWrapper.find('>.span-active').not(this).removeClass('span-active');
                 findArticle.slideDown('fast');
                 findArticle.addClass('active');
